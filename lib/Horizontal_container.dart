@@ -8,11 +8,15 @@ Widget HorizontalContainer(String name) {
     margin: EdgeInsets.all(10),
     padding: EdgeInsets.symmetric(horizontal: 16, vertical: 13),
     decoration: BoxDecoration(
+      color: Color.fromARGB(255, 52, 51, 51),
       borderRadius: BorderRadius.circular(20),
-      border: Border.all(color: Colors.black),
+      border: Border.all(color: Colors.white),
     ),
     child: Center(
-      child: Text(name),
+      child: Text(
+        name,
+        style: TextStyle(color: Colors.white),
+      ),
     ),
   );
 }
